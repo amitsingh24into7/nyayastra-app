@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Poppins%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <title>Nyayastra - Select App</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --primary-color: #1E398F;
+      --secondary-color: #2563EB;
+      --background-color: #F8FAFC;
+      --text-primary: #1E398F;
+      --text-secondary: #475569;
+      --card-background: #FFFFFF;
+    }
+    body { font-family: 'Poppins', 'Inter', sans-serif; }
+  </style>
+  <style>
+    body { min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="bg-[var(--background-color)]">
+  <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+    <div class="flex flex-col">
+      <header class="flex items-center p-4 pb-2">
+        <!-- Back to landing -->
+        <a href="landing.html" class="text-[var(--text-primary)]">
+          <span class="material-symbols-outlined">arrow_back_ios_new</span>
+        </a>
+        <h1 class="flex-1 text-center text-xl font-bold text-[var(--text-primary)] pr-6">Select Your App</h1>
+      </header>
+      <main class="grid grid-cols-2 gap-4 p-4">
+        <!-- Nyayastra Pulse -->
+        <div class="flex flex-col items-center justify-between rounded-2xl bg-[var(--card-background)] p-4 shadow-sm">
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-3 flex size-16 items-center justify-center rounded-full bg-blue-100 text-[var(--secondary-color)]">
+              <span class="material-symbols-outlined text-4xl">bolt</span>
+            </div>
+            <h2 class="text-base font-bold text-[var(--text-primary)]">Nyayastra Pulse</h2>
+            <p class="mt-1 text-xs text-[var(--text-secondary)]">AI-powered legal document drafting, case tracking, and e-filing assistant.</p>
+          </div>
+          <a href="https://nyastra-pulse.streamlit.app">
+            <button class="mt-4 w-full rounded-lg bg-[var(--secondary-color)] py-2 text-sm font-semibold text-white">Select</button>
+          </a>
+        </div>
+
+        <!-- Nyayastra Lite -->
+        <div class="flex flex-col items-center justify-between rounded-2xl bg-[var(--card-background)] p-4 shadow-sm">
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-3 flex size-16 items-center justify-center rounded-full bg-blue-100 text-[var(--secondary-color)]">
+              <span class="material-symbols-outlined text-4xl">rocket_launch</span>
+            </div>
+            <h2 class="text-base font-bold text-[var(--text-primary)]">Nyayastra Lite</h2>
+            <p class="mt-1 text-xs text-[var(--text-secondary)]">Quick legal help, lawyer connect, WhatsApp support.</p>
+          </div>
+          <a href="https://nyastra-lite.streamlit.app">
+            <button class="mt-4 w-full rounded-lg bg-[var(--secondary-color)] py-2 text-sm font-semibold text-white">Select</button>
+          </a>
+        </div>
+
+        <!-- Nyayastra Lawyer -->
+        <div class="flex flex-col items-center justify-between rounded-2xl bg-[var(--card-background)] p-4 shadow-sm">
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-3 flex size-16 items-center justify-center rounded-full bg-blue-100 text-[var(--secondary-color)]">
+              <span class="material-symbols-outlined text-4xl">business_center</span>
+            </div>
+            <h2 class="text-base font-bold text-[var(--text-primary)]">Nyayastra Lawyer</h2>
+            <p class="mt-1 text-xs text-[var(--text-secondary)]">Dashboard for lawyers: manage clients, cases, documents, and consultations.</p>
+          </div>
+          <a href="https://nyastra-lawyer.streamlit.app">
+            <button class="mt-4 w-full rounded-lg bg-[var(--secondary-color)] py-2 text-sm font-semibold text-white">Select</button>
+          </a>
+        </div>
+
+        <!-- Nyayastra Academics -->
+        <div class="flex flex-col items-center justify-between rounded-2xl bg-[var(--card-background)] p-4 shadow-sm">
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-3 flex size-16 items-center justify-center rounded-full bg-blue-100 text-[var(--secondary-color)]">
+              <span class="material-symbols-outlined text-4xl">school</span>
+            </div>
+            <h2 class="text-base font-bold text-[var(--text-primary)]">Nyayastra Academics</h2>
+            <p class="mt-1 text-xs text-[var(--text-secondary)]">Legal courses, internships, certifications for law students.</p>
+          </div>
+          <a href="https://nyastra-academics.streamlit.app">
+            <button class="mt-4 w-full rounded-lg bg-[var(--secondary-color)] py-2 text-sm font-semibold text-white">Select</button>
+          </a>
+        </div>
+      </main>
+    </div>
+    <footer class="sticky bottom-0">
+      <div class="flex justify-around border-t border-gray-200 bg-[var(--background-color)] py-2">
+        <a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="landing.html">
+          <span class="material-symbols-outlined">home</span>
+          <p class="text-xs font-medium">Home</p>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+          <span class="material-symbols-outlined">work</span>
+          <p class="text-xs">Cases</p>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+          <span class="material-symbols-outlined">chat_bubble</span>
+          <p class="text-xs">Chat</p>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+          <span class="material-symbols-outlined">person</span>
+          <p class="text-xs">Profile</p>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
