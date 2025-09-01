@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Nyayastra - AI-Powered Legal Platform</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --brand-primary: #1E398F;
+      --brand-secondary: #2563EB;
+      --brand-light: #F8FAFC;
+    }
+    body { font-family: 'Poppins', sans-serif; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-float-delay-1 { animation: float 3s ease-in-out infinite 0.5s; }
+    .animate-float-delay-2 { animation: float 3s ease-in-out infinite 1s; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+  <style>
+    body { min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="bg-[var(--brand-light)]">
+  <div class="flex flex-col min-h-screen">
+    <header class="absolute top-0 left-0 right-0 p-4 z-10"></header>
+    <main class="flex-grow flex flex-col justify-center items-center px-6 text-center">
+      <div class="relative w-full max-w-sm mb-12">
+        <div class="absolute -top-16 -left-8 text-5xl opacity-20 animate-float">⚖️</div>
+        <div class="absolute -top-8 -right-8 text-5xl opacity-20 animate-float-delay-1">📄</div>
+        <div class="absolute top-8 left-1/4 text-5xl opacity-20 animate-float-delay-2">📞</div>
+      </div>
+      <div class="relative z-10">
+        <h1 class="text-4xl font-bold text-[var(--brand-primary)] leading-tight">
+          India’s AI-Powered <br/> Legal Platform
+        </h1>
+        <p class="mt-4 text-base text-gray-600 max-w-md mx-auto">
+          Find verified lawyers, draft legal documents, track case status, and get justice — all in one place.
+        </p>
+      </div>
+    </main>
+    <footer class="p-6">
+      <!-- Link to App Selection -->
+      <a href="apps.html">
+        <button class="w-full h-14 bg-[var(--brand-secondary)] text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105">
+          Get Started
+        </button>
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
